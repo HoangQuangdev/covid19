@@ -26,4 +26,15 @@ export const routes: Route[] = [
     elementPageLogin: <Box />,
     isPrivate: false,
   },
+  {
+    path: "*",
+    name: R_Home.name,
+    element: (
+      <MainLayout>
+        <Box>Notound</Box>
+      </MainLayout>
+    ),
+    elementPageLogin: <Box />,
+    isPrivate: false,
+  },
 ];
