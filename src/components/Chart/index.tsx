@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import { registerables, Chart as CChart } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
@@ -36,24 +36,24 @@ const Chart = ({ chart }: { chart: chart[] }) => {
     ],
   };
 
-  const options = {
-    legend: { display: true },
-    title: {
-      display: true,
-      // text: "Predicted world population (millions) in 2050"
-    },
-    scales: {
-      y: {
-        beginAtZero: true,
-      },
-    },
-    responsive: true,
-    plugins: {
-      datalabels: {
-        align: "start", // Adjust this value based on your preference
-      },
-    },
-  };
+  // const options = {
+  //   legend: { display: true },
+  //   title: {
+  //     display: true,
+  //     // text: "Predicted world population (millions) in 2050"
+  //   },
+  //   scales: {
+  //     y: {
+  //       beginAtZero: true,
+  //     },
+  //   },
+  //   responsive: true,
+  //   plugins: {
+  //     datalabels: {
+  //       align: "start", // Adjust this value based on your preference
+  //     },
+  //   },
+  // };
   
 
   return (
@@ -78,7 +78,7 @@ const Chart = ({ chart }: { chart: chart[] }) => {
           fontWeight={"700"}
           color={"blue"}>Tháng</Typography>
       </Box>
-      <Bar width={100} height={60} data={data} options={options} />
+      <Bar width={100} height={60} data={data} />
     </Paper>
   );
 };
