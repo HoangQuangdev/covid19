@@ -1,5 +1,5 @@
 const R_Home = {
-  path : "home",
+  path : "/",
   name : "Home"
 }
 export {
